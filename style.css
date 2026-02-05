@@ -21,6 +21,12 @@ html {
   font-weight: 400;
   font-style: normal;
 }
+.hero {
+  border-radius: 24px 24px 24px 24px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+  padding: 80px 0px;
+}
+
 .navbar {
   padding-top: 0;
   padding-bottom: 0;
@@ -45,14 +51,20 @@ html {
 
 .section-padding {
   padding: 80px 0;
+  @media (max-width: 320px) {
+    .about {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
 }
 
 /* FOOTER */
 footer {
-  background: #111827;
+  background: var(--dark);
   color: white;
   text-align: center;
-  padding: 15px;
+  padding: 40px 0;
 }
 
 a {
@@ -103,4 +115,11 @@ footer {
 
 .wa-float:hover {
   background: #1ebe5d;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
